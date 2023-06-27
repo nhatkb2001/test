@@ -63,7 +63,7 @@ class _JokeContentState extends State<JokeContent> {
         children: [
           Container(
             width: double.infinity,
-            height: 450,
+            height: 324,
             child: PageView.builder(
               physics: const NeverScrollableScrollPhysics(),
               itemCount: jokesContent.length,
@@ -122,8 +122,8 @@ class _JokeContentState extends State<JokeContent> {
                     });
                   },
                   child: Container(
-                    height: 56,
-                    width: 160,
+                    height: 36,
+                    width: 140,
                     alignment: Alignment.bottomCenter,
                     color: Colors.blue,
                     child: const Center(
@@ -156,13 +156,13 @@ class _JokeContentState extends State<JokeContent> {
                         }
                       },
                       child: Container(
-                        height: 56,
-                        width: 160,
+                        height: 36,
+                        width: 140,
                         color: Colors.blue,
                         child: const Center(
                           child: Text(
                             "This is funny!",
-                            style: TextStyle(color: Colors.white),
+                            style: TextStyle(color: Colors.white, fontSize: 15),
                           ),
                         ),
                       ),
@@ -188,13 +188,13 @@ class _JokeContentState extends State<JokeContent> {
                         }
                       },
                       child: Container(
-                        height: 56,
-                        width: 160,
+                        height: 36,
+                        width: 140,
                         color: Colors.green,
                         child: const Center(
                           child: Text(
                             "This is not funny!",
-                            style: TextStyle(color: Colors.white),
+                            style: TextStyle(color: Colors.white, fontSize: 15),
                           ),
                         ),
                       ),
